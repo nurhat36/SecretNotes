@@ -86,6 +86,9 @@ def decrypt_click_button():
 def open_file():
     file_path = filedialog.askopenfilename(title="Select a file", filetypes=[("Text files", "*.txt")])
 
+
+    title_entry.insert(tk.END, file_path)
+
     if not file_path:
         return
 
